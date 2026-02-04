@@ -83,10 +83,10 @@ ADMIN_PASSWORD=admin123
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
-
+```
 ---
 
-🧪 Local Setup Instructions
+## 🧪 Local Setup Instructions
 
 1️⃣ Clone the Repository
   git clone https://github.com/AyushPratap07/MediSlot.git
@@ -109,23 +109,23 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ---
 
-🖼 Image Handling
+## 🖼 Image Handling
 All doctor profile images are stored securely using Cloudinary
 Images are uploaded via backend and stored as URLs
 No images are stored directly on the server
 
-🌱 Database Seeding
+## 🌱 Database Seeding
 Doctors are seeded using a custom seeder script
 Existing doctors are preserved
 Images can be updated by re-running the seeder with new image URLs
 
-🔒 Security Highlights
+## 🔒 Security Highlights
 Password hashing using bcrypt
 JWT-based authentication
 Protected routes for Admin & Doctor
 Environment variables hidden from repository
 
-📈 Future Enhancements
+## 📈 Future Enhancements
 Razorpay payment integration (Test Dashboard)
 Appointment reminders (Email / SMS)
 Doctor profile editing from dashboard
@@ -133,7 +133,7 @@ Role-based access control
 Admin analytics charts
 Deployment with CI/CD
 
-🧠 Learning Outcomes
+## 🧠 Learning Outcomes
 Real-world MERN architecture
 Secure authentication & authorization
 Cloudinary integration
@@ -141,7 +141,7 @@ Admin-Doctor-Patient role separation
 Production-ready folder structure
 Git & GitHub best practices
 
-👨‍💻 Author
+## 👨‍💻 Author
 Ayush Pratap Singh
 Full-Stack Developer
 GitHub: https://github.com/AyushPratap07
