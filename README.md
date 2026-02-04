@@ -143,10 +143,13 @@ Git & GitHub best practices
 
 ## 👨‍💻 Author
 Ayush Pratap Singh
+
 Full-Stack Developer
+
 GitHub: https://github.com/AyushPratap07
 
 ---
 
 ⭐ If you like this project
+
 Give it a ⭐ on GitHub — it really helps!
