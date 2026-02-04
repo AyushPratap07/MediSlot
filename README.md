@@ -67,7 +67,7 @@ This project is built with scalability, security, and real-world workflows in mi
      ```  
 
 ---
-
+```
 ## 🔐 Environment Variables
 
 Environment variables are **not committed** for security reasons.
