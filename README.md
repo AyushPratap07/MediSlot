@@ -56,7 +56,8 @@ This project is built with scalability, security, and real-world workflows in mi
 ---
 
 ## 📂 Project Structure
-MediSlot/ │
+MediSlot/ 
+ │
  ├── client/        # Patient & Doctor Frontend(React) 
  ├── admin/         # Admin Dashboard (React) 
  ├── server/        # Backend (Node + Express) 
@@ -91,21 +92,28 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ### 1️⃣ Clone the Repository
   git clone https://github.com/AyushPratap07/MediSlot.git
+
   cd MediSlot
 
 ### 2️⃣ Backend Setup
   cd server
+
   npm install
+
   npm run dev
 
 ### 3️⃣ Client Setup
   cd client
+
   npm install
+
   npm run dev
 
 ### 4️⃣ Admin Panel Setup
   cd admin
+
   npm install
+
   npm run dev
 
 ---
@@ -158,6 +166,8 @@ Admin-Doctor-Patient role separation
 Production-ready folder structure
 
 Git & GitHub best practices
+
+---
 
 ## 👨‍💻 Author
 Ayush Pratap Singh
