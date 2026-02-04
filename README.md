@@ -56,7 +56,7 @@ This project is built with scalability, security, and real-world workflows in mi
 ---
 
 ## 📂 Project Structure
-MediSlot/ 
+```MediSlot/ 
  │
  ├── client/        # Patient & Doctor Frontend(React) 
  ├── admin/         # Admin Dashboard (React) 
@@ -64,7 +64,7 @@ MediSlot/
      ├── .env.example
  ├── .gitignore 
  ├── README.md 
-       
+     ```  
 
 ---
 
