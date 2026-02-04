@@ -56,7 +56,9 @@ This project is built with scalability, security, and real-world workflows in mi
 ---
 
 ## 📂 Project Structure
-```MediSlot/ 
+
+```env
+MediSlot/ 
  │
  ├── client/        # Patient & Doctor Frontend(React) 
  ├── admin/         # Admin Dashboard (React) 
@@ -64,10 +66,10 @@ This project is built with scalability, security, and real-world workflows in mi
      ├── .env.example
  ├── .gitignore 
  ├── README.md 
-     ```  
+ ```  
 
 ---
-```
+
 ## 🔐 Environment Variables
 
 Environment variables are **not committed** for security reasons.
