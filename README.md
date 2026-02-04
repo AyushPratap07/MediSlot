@@ -88,21 +88,22 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ## 🧪 Local Setup Instructions
 
-1️⃣ Clone the Repository
-  git clone https://github.com/AyushPratap07/MediSlot.git
+### 1️⃣ Clone the Repository
+  git clone https://github.com/AyushPratap07/
+  MediSlot.git
   cd MediSlot
 
-2️⃣ Backend Setup
+### 2️⃣ Backend Setup
   cd server
   npm install
   npm run dev
 
-3️⃣ Client Setup
+### 3️⃣ Client Setup
   cd client
   npm install
   npm run dev
 
-4️⃣ Admin Panel Setup
+### 4️⃣ Admin Panel Setup
   cd admin
   npm install
   npm run dev
