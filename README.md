@@ -57,12 +57,13 @@ This project is built with scalability, security, and real-world workflows in mi
 
 ## 📂 Project Structure
 MediSlot/ │
- ├── client/        # Patient & Doctor Frontend (React) 
+ ├── client/        # Patient & Doctor Frontend(React) 
  ├── admin/         # Admin Dashboard (React) 
- ├── server/        # Backend (Node + Express) │ 
+ ├── server/        # Backend (Node + Express) 
+     ├── .env.example
  ├── .gitignore 
  ├── README.md 
-       └── .env.example
+       
 
 ---
 
