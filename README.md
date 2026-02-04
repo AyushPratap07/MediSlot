@@ -89,8 +89,7 @@ CLOUDINARY_API_SECRET=your_api_secret
 ## 🧪 Local Setup Instructions
 
 ### 1️⃣ Clone the Repository
-  git clone https://github.com/AyushPratap07/
-  MediSlot.git
+  git clone https://github.com/AyushPratap07/MediSlot.git
   cd MediSlot
 
 ### 2️⃣ Backend Setup
