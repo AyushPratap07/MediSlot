@@ -112,34 +112,51 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ## 🖼 Image Handling
 All doctor profile images are stored securely using Cloudinary
+
 Images are uploaded via backend and stored as URLs
+
 No images are stored directly on the server
 
 ## 🌱 Database Seeding
 Doctors are seeded using a custom seeder script
+
 Existing doctors are preserved
+
 Images can be updated by re-running the seeder with new image URLs
 
 ## 🔒 Security Highlights
 Password hashing using bcrypt
+
 JWT-based authentication
+
 Protected routes for Admin & Doctor
+
 Environment variables hidden from repository
 
 ## 📈 Future Enhancements
 Razorpay payment integration (Test Dashboard)
+
 Appointment reminders (Email / SMS)
+
 Doctor profile editing from dashboard
+
 Role-based access control
+
 Admin analytics charts
+
 Deployment with CI/CD
 
 ## 🧠 Learning Outcomes
 Real-world MERN architecture
+
 Secure authentication & authorization
+
 Cloudinary integration
+
 Admin-Doctor-Patient role separation
+
 Production-ready folder structure
+
 Git & GitHub best practices
 
 ## 👨‍💻 Author
