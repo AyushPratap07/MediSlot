@@ -1,25 +1,41 @@
 # 🏥 MediSlot – Doctor Appointment Booking System
 
-MediSlot is a **full-stack MERN healthcare web application** that allows patients to book doctor appointments online, while providing dedicated dashboards for **Admin** and **Doctors** to manage profiles, appointments, and schedules efficiently.
+MediSlot is a **full-stack MERN healthcare web application** that allows users to **find doctors, book appointments, and make online payments**, while providing **admin and doctor dashboards** for managing schedules, profiles, and appointments.
 
 This project is built with scalability, security, and real-world workflows in mind.
+
+---
+
+## 🌐 Live Demo
+
+### Frontend (Vercel):
+
+👉 https://medi-slot-five.vercel.app
+
+### Backend API (Render):
+
+👉 https://medislot-3net.onrender.com
+
+⚠️ Render free instances may take 30–50 seconds to wake up after inactivity.
 
 ---
 
 ## 🚀 Live Features
 
 ### 👤 Patient
-- User authentication (Register / Login)
+- User authentication (JWT)
 - Browse doctors by specialty
-- View doctor profiles
+- View doctor profiles & availability
 - Book appointments
-- Appointment history
+- Online payment using Razorpay (Test Mode)
+- View appointment history
+- Cancel appointments
 
 ### 🩺 Doctor
-- Doctor authentication
-- View assigned appointments
-- Manage availability slots
-- Profile details & image stored securely on Cloudinary
+- Doctor login
+- Profile management
+- View scheduled appointments
+- Appointment status tracking
 
 ### 🛠 Admin
 - Secure admin login
@@ -37,6 +53,7 @@ This project is built with scalability, security, and real-world workflows in mi
 - Tailwind CSS
 - Axios
 - React Router DOM
+- Razorpay Checkout
 
 ### Backend
 - Node.js
@@ -49,23 +66,92 @@ This project is built with scalability, security, and real-world workflows in mi
 ### Cloud & Services
 - Cloudinary (Image Storage)
 - MongoDB Atlas
-- Razorpay (Test Mode – Planned)
-- Vercel (Frontend Deployment – Planned)
-- Render / Railway (Backend Deployment – Planned)
+- Razorpay (Test Mode)
+- Vercel (Frontend Deployment)
+- Render (Backend Deployment)
 
+---
+
+## 🧩 System Architecture
+
+MediSlot follows a client–server architecture with clearly separated frontend and backend services, deployed independently for scalability and maintainability.
+
+---
+
+## 🖥️ High-Level Architecture Diagram
+```txt
+┌──────────────────────────┐
+│        User Browser      │
+│  (Chrome / Mobile / PC)  │
+└─────────────┬────────────┘
+              │ HTTPS Requests
+              ▼
+┌──────────────────────────┐
+│        Frontend           │
+│   React + Vite (Vercel)   │
+│                            │
+│  • User Interface          │
+│  • Routing (React Router)  │
+│  • API Calls (Axios)       │
+│  • Razorpay Checkout       │
+└─────────────┬────────────┘
+              │ REST API Calls
+              ▼
+┌──────────────────────────┐
+│        Backend API        │
+│   Node.js + Express       │
+│        (Render)           │
+│                            │
+│  • Authentication (JWT)   │
+│  • Business Logic         │
+│  • Role-based Access      │
+│  • Payment Verification   │
+└───────┬─────────┬────────┘
+        │         │
+        │         │
+        ▼         ▼
+┌──────────────┐  ┌──────────────────┐
+│ MongoDB Atlas│  │   Cloudinary      │
+│   Database   │  │  Image Storage    │
+│              │  │                  │
+│ • Users      │  │ • Doctor Images   │
+│ • Doctors    │  │ • Profile Photos │
+│ • Appointments│ │                  │
+└──────────────┘  └──────────────────┘
+        │
+        ▼
+┌──────────────────────────┐
+│       Razorpay API       │
+│   (Payment Gateway)      │
+│                          │
+│ • Order Creation         │
+│ • Payment Verification  │
+└──────────────────────────┘
+```
 ---
 
 ## 📂 Project Structure
 
 ```env
-MediSlot/ 
- │
- ├── client/        # Patient & Doctor Frontend(React) 
- ├── admin/         # Admin Dashboard (React) 
- ├── server/        # Backend (Node + Express) 
-     ├── .env.example
- ├── .gitignore 
- ├── README.md 
+MediSlot/
+│
+├── client/          # React frontend
+│   ├── src/
+│   ├── public/
+│   └── vite.config.js
+│
+├── server/          # Node + Express backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middlewares/
+│   └── index.js
+│
+├── admin/           # Admin panel
+│
+├── .gitignore
+└── README.md
+
  ```  
 
 ---
@@ -143,18 +229,14 @@ Protected routes for Admin & Doctor
 
 Environment variables hidden from repository
 
-## 📈 Future Enhancements
-Razorpay payment integration (Test Dashboard)
+## 💳 Payment Integration (Razorpay)
+Razorpay is integrated in test mode
 
-Appointment reminders (Email / SMS)
+Orders are created on backend
 
-Doctor profile editing from dashboard
+Payments verified server-side
 
-Role-based access control
-
-Admin analytics charts
-
-Deployment with CI/CD
+Appointment marked as paid after verification
 
 ## 🧠 Learning Outcomes
 Real-world MERN architecture
@@ -168,6 +250,14 @@ Admin-Doctor-Patient role separation
 Production-ready folder structure
 
 Git & GitHub best practices
+
+Payment Integration
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
 
 ---
 
