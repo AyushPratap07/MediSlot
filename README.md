@@ -23,16 +23,25 @@ This project is built with scalability, security, and real-world workflows in mi
 ## 📸 Screenshots
 
 ### Home Page
+
 ![Home](client/src/assets/screenshots/home.png)
+
 ![Home](client/src/assets/screenshots/contactus.png)
+
 ![Doctors](client/src/assets/screenshots/doctors.png)
 
+
 ### Book Appointment
+
 ![Booking](client/src/assets/screenshots/appointment.png)
+
 ![Booking](client/src/assets/screenshots/appointment2.png)
 
+
 ### Payment (Razorpay Test Mode)
+
 ![Payment](client/src/assets/screenshots/razorpay.png)
+
 
 ---
 
