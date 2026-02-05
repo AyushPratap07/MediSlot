@@ -74,7 +74,7 @@ This project is built with scalability, security, and real-world workflows in mi
 
 ## 🧩 System Architecture
 
-![MediSlot System Architecture](assets/system-architecture.png)
+![MediSlot System Architecture](client/src/assets/system-architecture.png)
 
 MediSlot follows a client–server architecture with clearly separated frontend and backend services, deployed independently for scalability and maintainability.
 
