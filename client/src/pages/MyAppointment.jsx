@@ -99,6 +99,9 @@ const MyAppointments = () => {
   }
 
   useEffect(() => {
+    if(!token) {
+      navigate("/login")
+    }
     if (token) {
       getUserAppointments()
     }
