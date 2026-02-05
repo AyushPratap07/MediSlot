@@ -74,60 +74,10 @@ This project is built with scalability, security, and real-world workflows in mi
 
 ## 🧩 System Architecture
 
+![MediSlot System Architecture](assets/system-architecture.png)
+
 MediSlot follows a client–server architecture with clearly separated frontend and backend services, deployed independently for scalability and maintainability.
 
----
-
-## 🖥️ High-Level Architecture Diagram
-```txt
-┌──────────────────────────┐
-│        User Browser      │
-│  (Chrome / Mobile / PC)  │
-└─────────────┬────────────┘
-              │ HTTPS Requests
-              ▼
-┌──────────────────────────┐
-│        Frontend           │
-│   React + Vite (Vercel)   │
-│                            │
-│  • User Interface          │
-│  • Routing (React Router)  │
-│  • API Calls (Axios)       │
-│  • Razorpay Checkout       │
-└─────────────┬────────────┘
-              │ REST API Calls
-              ▼
-┌──────────────────────────┐
-│        Backend API        │
-│   Node.js + Express       │
-│        (Render)           │
-│                            │
-│  • Authentication (JWT)   │
-│  • Business Logic         │
-│  • Role-based Access      │
-│  • Payment Verification   │
-└───────┬─────────┬────────┘
-        │         │
-        │         │
-        ▼         ▼
-┌──────────────┐  ┌──────────────────┐
-│ MongoDB Atlas│  │   Cloudinary      │
-│   Database   │  │  Image Storage    │
-│              │  │                  │
-│ • Users      │  │ • Doctor Images   │
-│ • Doctors    │  │ • Profile Photos │
-│ • Appointments│ │                  │
-└──────────────┘  └──────────────────┘
-        │
-        ▼
-┌──────────────────────────┐
-│       Razorpay API       │
-│   (Payment Gateway)      │
-│                          │
-│ • Order Creation         │
-│ • Payment Verification  │
-└──────────────────────────┘
-```
 ---
 
 ## 📂 Project Structure
